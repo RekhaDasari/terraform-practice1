@@ -2,7 +2,7 @@ provider "aws" {
   region = var.region
 }
 
-resource "aws_instance" "LearningTerraform-Rekha" {
+resource "aws_instance" "LearningTerraform" {
   ami           = var.ami
   instance_type = "t3.micro"
   key_name      = var.key_name
@@ -14,7 +14,7 @@ resource "aws_instance" "LearningTerraform-Rekha" {
 
   vpc_security_group_ids = ["${aws_security_group.LearningTerraformSG.id}"]
   tags = {
-    Name     = "Learning Terraform"
+    Name     = "Learning Terraform-Rekha"
     Business = "IT"
     Purpose  = "Staging"
   }
