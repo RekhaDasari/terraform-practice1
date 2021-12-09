@@ -2,7 +2,7 @@ provider "aws" {
   region = var.region
 }
 
-resource "aws_instance" "LearningTerraform" {
+resource "aws_instance" "LearningTerraform-Rekha" {
   ami           = var.ami
   instance_type = "t3.micro"
   key_name      = var.key_name
