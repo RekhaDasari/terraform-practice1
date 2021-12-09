@@ -4,13 +4,13 @@ variable "server_port" {
 }
 
 variable "region" {
-  default = "ap-south-1"
+  default = "ap-southeast-1"
 }
 
 variable "ami" {
-    default = "ami-0567e0d2b4b2169ae"
+    default = "ami-0dc5785603ad4ff54"
 }
 
 variable "key_name" {
-    default = "iomega-azure-keypair"
+    default = "rekha-keypair"
 }
